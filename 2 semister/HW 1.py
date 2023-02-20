@@ -19,6 +19,8 @@ theEarthMass = 5.976 * math.pow(10,24)
 G = 6.6743 * math.pow(10,-11)
 def findOutGravitaion(G, m1, m2, R):
     return (G*m1*m2)/(math.pow(R,2))
-
-nameOfAPlanet = input('Напишите название объекта из перечня: Меркурий, Венера, Марс, Юпитер, Сатурн, Уран, Нептун, Плутон, Луна, МКС')
+print('Добро пожаловать Иван Викторович!')
+nameOfAPlanet = input('Напишите название объекта из перечня: Меркурий, Венера, Марс, Юпитер, Сатурн, Уран, Нептун, Плутон, Луна, МКС \n')
 print(findOutGravitaion(G,theEarthMass,planets[nameOfAPlanet][0], planets[nameOfAPlanet][1]))
+end = input("Нажмите любую клавишу, чтобы закрыть консоль")
+exit()
