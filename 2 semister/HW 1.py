@@ -5,7 +5,6 @@ import urllib.request
 api = "https://api.wheretheiss.at/v1/satellites/25544"
 check = urllib.request.urlopen(api)
 data = json.loads(check.read())
-print(data)
 planets = {'Меркурий': [3.302 * math.pow(10,23), 92 * math.pow(10,9)],
            'Венера': [4.8685 * math.pow(10,24), 42 * math.pow(10,9)],
            'Марс': [6.419 * math.pow(10,23), 79 * math.pow(10,9)],
@@ -21,5 +20,5 @@ G = 6.6743 * math.pow(10,-11)
 def findOutGravitaion(G, m1, m2, R):
     return (G*m1*m2)/(math.pow(R,2))
 
-nameOfAPlanet = input('Напишите название объекта ')
+nameOfAPlanet = input('Напишите название объекта из перечня: Меркурий, Венера, Марс, Юпитер, Сатурн, Уран, Нептун, Плутон, Луна, МКС')
 print(findOutGravitaion(G,theEarthMass,planets[nameOfAPlanet][0], planets[nameOfAPlanet][1]))
