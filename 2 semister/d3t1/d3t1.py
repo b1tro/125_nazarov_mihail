@@ -25,5 +25,6 @@ def season_events(number_of_month, year):
         currentNumber = random.randint(0,len(events)-1)
         if choosenNumbers.count(currentNumber)==0:
             wiki.write('\n' + events[currentNumber])
+            choosenNumbers.append(currentNumber)
 
 season_events(monthName,yearNumber)
