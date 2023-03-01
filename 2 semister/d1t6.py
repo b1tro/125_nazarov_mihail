@@ -13,7 +13,7 @@ def whoCanBuy(cost, peopleAndMoney):
             print(name, "с количеством денег на счету -", peopleAndMoney[name])
             i += 1
         else:
-            print("В сделку не входит ", name, "потому этот человек имеет всего", peopleAndMoney[name])
+            print("В сделку не входит ", name, "потому имеет всего", peopleAndMoney[name])
 
 
 COST = random.randint(500,1001)
