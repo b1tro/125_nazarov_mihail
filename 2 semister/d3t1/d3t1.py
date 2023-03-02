@@ -8,18 +8,17 @@ yearNumber = int(input('Введите год в котором вы родил�
 
 def season_events(number_of_month, year):
     events = []
-    url = 'https://ru.wikipedia.org/wiki/Категория:'+ str(number_of_month) + "_" + str(year) + '_года'
+    url = 'https://ru.wikipedia.org/wiki/Категория:'+ number_of_month.lower() + "_" + str(year) + '_года'
     transformedUrl = urllib.parse.quote(url,safe=':/')
     response = requests.get(transformedUrl)
     bs = BeautifulSoup(response.text, "lxml")
-    print1 = bs.find('div', class_='mw-category-group').find('a').get('title')
     articles = bs.find_all('div', class_="mw-category-group")
     for article in articles:
         titles = article.find_all('a')
         for title in titles:
             events.append(title.get('title'))
     wiki = open('wiki', 'w+')
-    wiki.write("В " + str(year) + " году, в месяце " + str(number_of_month).lower() + " произошли данные события:")
+    wiki.write("В " + str(year) + " году, в месяце " + str(number_of_month).lower() + " произошли данные события (5 случайных):")
     choosenNumbers = []
     for i in range(0,5):
         currentNumber = random.randint(0,len(events)-1)
