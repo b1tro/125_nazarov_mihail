@@ -1,11 +1,3 @@
-text = None
-
-salary = None
-
-area = None
-
-metro = None
-
 experience = {
     "Нет опыта": "noExperience",
     "От 1 года до 3 лет": "between1And3",

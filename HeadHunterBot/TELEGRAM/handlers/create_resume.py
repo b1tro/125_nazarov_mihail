@@ -1,12 +1,14 @@
 from aiogram import Dispatcher, types
+import SQL.user_data
 from bot_initialize import bot
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.dispatcher import FSMContext
 from TELEGRAM.keyboards.keyboards_instance import create_resume
 from SQL import user_data
+import datetime
+from HEADHUNTER.resume import resume_processing
 
 class Resume(StatesGroup):
-    user_id = State()
     title = State()
     salary = State()
     area = State()
@@ -17,11 +19,16 @@ class Resume(StatesGroup):
 
 # @dp.message_handler(commands='resume', state = None, ignore_case = True)
 async def start_creating_resume(message: types.Message, state: FSMContext):
-    await Resume.user_id.set()
-    await state.update_data(user_id=message.from_user.id)
-    await Resume.next()
-    await bot.send_message(message.from_user.id, "Напишите <b>ключевые слова</b> названия вакансии", parse_mode='HTML',
-                           reply_markup=create_resume.no_matter_keyboard)
+    if (SQL.user_data.is_resume_exists(message.from_user.id)):
+        await bot.send_message(message.from_user.id, "<b>У вас уже существует резюме. Вы можете обновить его, либо удалить.</b>",
+                               parse_mode='HTML')
+        await state.finish()
+    else:
+        await Resume.title.set()
+        await state.update_data(user_id=message.from_user.id)
+        await state.update_data(user_name = message.from_user.first_name + " " + message.from_user.last_name)
+        await bot.send_message(message.from_user.id, "Напишите <b>ключевые слова</b> названия вакансии", parse_mode='HTML',
+                               reply_markup=create_resume.no_matter_keyboard)
 
 salary_state_text = """Отлично. Далее укажите желаемую зарплату в рублях(<b>цифрами,
 без лишних знаков</b>)
@@ -91,10 +98,11 @@ finish_state_text = """<b>Поздравляем! Ваше резюме сохр
 # @dp.message_handler(state = Resume.schedule, content_types='text')
 async def set_schedule(message: types.Message, state: FSMContext):
     await state.update_data(schedule=message.text)
+    await state.update_data(register_time=str(datetime.datetime.now()))
     await bot.send_message(message.from_user.id, finish_state_text,
                            parse_mode='HTML', reply_markup=create_resume.close_keyboard)
     client_resume = await state.get_data()
-    client_resume_saved = (client_resume['user_id'], client_resume['title'],client_resume['salary'],client_resume['area'],
+    client_resume_saved = (client_resume['user_id'], client_resume['user_name'],client_resume['register_time'], client_resume['title'],client_resume['salary'],client_resume['area'],
                                          client_resume['metro'],client_resume['experience'],client_resume['employment'],client_resume['schedule'])
     await state.finish()
     result = f"""
@@ -106,7 +114,9 @@ async def set_schedule(message: types.Message, state: FSMContext):
 <b>Занятость</b> - {client_resume['employment']}
 <b>График работы</b> - {client_resume['schedule']}"""
     await bot.send_message(message.from_user.id, result, parse_mode="HTML")
+    #Загружаем резюме в базу данных, изначальную и обработанную
     user_data.add_resume_to_base(tuple(client_resume_saved))
+    resume_processing.send_processed_resume(list(client_resume_saved))
 
 def register_create_resume_handlers(dp: Dispatcher):
     dp.register_message_handler(start_creating_resume,commands='resume', state = None)

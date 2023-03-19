@@ -25,3 +25,5 @@ schedule_keyboard.add(KeyboardButton("Полный день"),
                         KeyboardButton("Не имеет значения"))
 
 close_keyboard = ReplyKeyboardRemove()
+
+resume_exists = ReplyKeyboardMarkup(resize_keyboard=True)
