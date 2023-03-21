@@ -43,7 +43,7 @@ class Searching():
             territory = "не указано"
 
         try:
-            profit = f"{results['items'][vacancy_number]['salary']['from']} - {results['items'][vacancy_number]['salary']['to']} рублей"
+            profit = f"{results['items'][vacancy_number]['salary']['from']} - {results['items'][vacancy_number]['salary']['to']} "
             profit = profit.replace("None", "")
             profit +=  results['items'][vacancy_number]['salary']['currency']
         except (IndexError, TypeError, AttributeError) as errors:
@@ -88,6 +88,7 @@ class Searching():
             vacancy_information = "Кажется, ты долистал до последней вакансии.. Возможно, стоит поменять какие-то параметры в резюме."
             return vacancy_information
 
+
 searching = Searching
 def get_number():
     searching.number+=1
@@ -98,3 +99,11 @@ def get_page():
         searching.page+=1
         searching.number=0
     return searching.page
+
+def get_current_number():
+    return searching.number
+
+def get_current_page():
+    return searching.page
+
+

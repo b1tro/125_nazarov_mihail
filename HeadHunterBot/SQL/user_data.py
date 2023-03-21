@@ -1,3 +1,4 @@
+import sqlite3
 import sqlite3 as sql
 
 data_base = sql.connect('user_data.db')
@@ -35,6 +36,15 @@ page TEXT,
 premium TEXT)
 """)
 data_base.commit()
+
+cursor.execute("""CREATE TABLE IF NOT EXISTS user_saved_vacancies(
+user_id TEXT,
+information TEXT PRIMARY KEY)
+""")
+data_base.commit()
+
+# cursor.execute("DROP TABLE user_saved_vacancies")
+# data_base.commit()
 
 def add_resume_to_base(resume_data : tuple):
     cursor.execute("INSERT INTO user_resume VALUES(?,?,?,?,?,?,?,?,?,?)", resume_data)
@@ -82,4 +92,38 @@ def update_adapted_resume(adapted_resume, user_id):
 def delete_resume(user_id):
     cursor.execute(f"DELETE FROM user_resume WHERE user_id={user_id}")
     cursor.execute(f"DELETE FROM adapted_user_resume WHERE user_id={user_id}")
+    data_base.commit()
+
+def save_vacancy(vacancy_information : list):
+    try:
+        cursor.execute('INSERT INTO user_saved_vacancies (user_id,information) VALUES(?,?) ' , tuple(vacancy_information))
+        data_base.commit()
+    except sqlite3.IntegrityError:
+        pass
+
+class get_saved_vacancy():
+    number = 0
+    def get_saved_vacancies(user_id, number):
+        cursor.execute('SELECT information FROM user_saved_vacancies WHERE user_id=?', (user_id,))
+        saved_vacancies = cursor.fetchall()
+        try:
+            check = saved_vacancies[0]
+        except (IndexError, TypeError, AttributeError) as errors:
+            return "Вы еще не сохранили ни одной вакансии!"
+        try:
+            current_vacancy = list(saved_vacancies[number])
+            return current_vacancy[0]
+        except IndexError:
+            get_saved_vacancy.number = -1
+            return False
+
+    def get_number(self):
+        self.number+=1
+        return self.number
+
+    def get_current_number(self):
+        return self.number
+
+def delete_saved_vanancy(user_id, info):
+    cursor.execute('DELETE FROM user_saved_vacancies WHERE information = ? AND user_id = ?', (info,user_id,))
     data_base.commit()
