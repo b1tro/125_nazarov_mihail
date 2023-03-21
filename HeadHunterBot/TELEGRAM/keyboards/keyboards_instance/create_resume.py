@@ -1,7 +1,7 @@
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove
 
 no_matter_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-no_matter_keyboard.add(KeyboardButton("Нет значения"))
+no_matter_keyboard.add(KeyboardButton("Не имеет значения"))
 
 experience_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 experience_keyboard.add(KeyboardButton("Нет опыта"), KeyboardButton("От 1 года до 3 лет"),

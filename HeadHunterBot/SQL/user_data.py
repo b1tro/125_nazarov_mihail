@@ -50,17 +50,36 @@ def is_resume_exists(user_id):
         return False
     return True
 
-def send_resume(user_id):
-    cursor.execute("SELECT text, salary, area, metro, experience, employment, schedule, user_id FROM user_resume WHERE user_id = ?", (user_id,))
-    user_resume = cursor.fetchall()
-    return list(user_resume[0])
-
 def is_adapted_resume_exists(user_id):
     cursor.execute("SELECT * FROM adapted_user_resume WHERE user_id = ?", (user_id,))
     if cursor.fetchone() == None:
         return False
     return True
+
+def send_resume(user_id):
+    cursor.execute("SELECT text, salary, area, metro, experience, employment, schedule, user_id FROM user_resume WHERE user_id = ?", (user_id,))
+    user_resume = cursor.fetchall()
+    return list(user_resume[0])
+
+def send_resume_to_update(user_id):
+    cursor.execute("SELECT text, salary, area, metro, experience, employment, schedule FROM user_resume WHERE user_id = ?", (user_id,))
+    user_resume = cursor.fetchall()
+    return list(user_resume[0])
+
 def send_adapted_resume(user_id):
     cursor.execute("SELECT text, salary, area, metro, experience, employment, schedule, vacancy_search_order, vacancy_search_fields, only_with_salary, period, page, premium FROM adapted_user_resume WHERE user_id = ?",(user_id,))
     user_adapted_resume = cursor.fetchall()
     return list(user_adapted_resume[0])
+
+def update_resume(user_id, parametr, value):
+    cursor.execute(f"UPDATE user_resume SET {parametr} = ? WHERE user_id = {user_id}", (value,))
+    data_base.commit()
+
+def update_adapted_resume(adapted_resume, user_id):
+    cursor.execute(f"UPDATE adapted_user_resume SET (text, salary, area, metro, experience, employment, schedule) = (?,?,?,?,?,?,?) WHERE user_id ={user_id}", adapted_resume)
+    data_base.commit()
+
+def delete_resume(user_id):
+    cursor.execute(f"DELETE FROM user_resume WHERE user_id={user_id}")
+    cursor.execute(f"DELETE FROM adapted_user_resume WHERE user_id={user_id}")
+    data_base.commit()
