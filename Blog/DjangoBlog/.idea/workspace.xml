@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70fe6761-b1ad-4e13-9b9d-d87181700938" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/NazarovBlog/asgi.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/NazarovBlog/settings.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/NazarovBlog/urls.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/NazarovBlog/wsgi.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/manage.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/publications/apps.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/publications/migrations/0001_initial.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/publications/models.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/publications/urls.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NazarovBlog/publications/views.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2NSRGYGyfWMAPp07KwRkNW7EsGm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/GitHub/125_nazarov_mihail/125_nazarov_mihail/Blog/DjangoBlog",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70fe6761-b1ad-4e13-9b9d-d87181700938" name="Changes" comment="" />
+      <created>1679655408058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679655408058</updated>
+    </task>
+    <servers />
+  </component>
+</project>
