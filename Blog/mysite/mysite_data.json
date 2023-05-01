@@ -1,0 +1,960 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-04-21T14:35:30.124Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Who Am I?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-04-21T14:35:40.682Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Who Am I?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-04-21T15:27:58.309Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Who Am I?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-04-21T15:29:06.472Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Who Am I?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-04-21T15:43:57.265Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Lets Continue",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-04-21T17:06:57.185Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "This post is published!",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-04-26T15:13:43.850Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "What is day today?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-04-27T08:10:42.388Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Comment by Michail on Who Am I?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-04-27T14:53:12.597Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Почему радиация ассоциируется с зеленым цветом?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-04-30T08:54:48.094Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Жидкое ли стекло?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-04-30T08:56:02.583Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Правда ли, что мозг работает всего на 10%?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-04-30T17:23:38.596Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Markdown post",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-04-30T20:56:13.844Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "localhost:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$jJhyzpGUI4kz2gr8tX6eLU$ZLjvdnVHyN1dDkbJxWbCPJGlgWCdQULqqZz2inETqvE=",
+    "last_login": "2023-04-21T14:26:33.746Z",
+    "is_superuser": true,
+    "username": "b1tro",
+    "first_name": "",
+    "last_name": "",
+    "email": "b1trocsgo@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-04-21T14:24:55.048Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m01ksvyz3zgwrkfcwf0dtb1pfqn5erjh",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlmxWf8o6XMGa23v4gBypDipEHeHSCmgfTPzXiLitta4dVriVMRFKHH63RLmB7UdlDu22yzz3NZlSnJX5EG7HOdCz-vh_h1U7PVb26SwGHQAntkyaMJMyQ2aUSnnwOoAQIPSXDh4QxqMtRl8sOcQQGXx_gDoizdY:1pprib:Hh40fC0eFj0MkLu5bMqrSjvDnTR3zf9eA51rNd9evuc",
+    "expire_date": "2023-05-05T14:26:33.864Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Who Am I?",
+    "slug": "who-am-i",
+    "body": "Hi! My name is Misha and I am 19 years old boy. I am learning django to be smart and good programist. This is my first post and I hope you will find it enjoyable.",
+    "publish": "2023-04-21T14:31:31Z",
+    "created": "2023-04-21T14:35:30.095Z",
+    "updated": "2023-04-25T16:12:10.044Z",
+    "status": "PB",
+    "author": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "Lets Continue",
+    "slug": "lets-continue",
+    "body": "I continue to test my django website. I am making flexible admin-panel and this post sponsored by that.",
+    "publish": "2023-04-21T15:42:19Z",
+    "created": "2023-04-21T15:43:57.263Z",
+    "updated": "2023-04-25T16:12:09.892Z",
+    "status": "PB",
+    "author": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "This post is published!",
+    "slug": "this-post-is-published",
+    "body": "no matter what",
+    "publish": "2023-04-21T17:06:32Z",
+    "created": "2023-04-21T17:06:57.182Z",
+    "updated": "2023-04-21T17:06:57.182Z",
+    "status": "PB",
+    "author": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "What is day today?",
+    "slug": "what-is-day-today",
+    "body": "Today is 26th of the april of 2023 year. I am still trying to learn django and this post is needed to extend my posts list.",
+    "publish": "2023-04-26T15:12:45Z",
+    "created": "2023-04-26T15:13:43.835Z",
+    "updated": "2023-04-26T15:13:43.835Z",
+    "status": "PB",
+    "author": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "Почему радиация ассоциируется с зеленым цветом?",
+    "slug": "pochemu-radiaciya-associiruetsya-s-zelenym-cvetom",
+    "body": "Какой цвет приходит нам в голову, когда речь идет о радиоактивных элементах? Наверняка, многие подумали о зеленом. Но правда заключается в том, что очень немногие радиоактивные вещества светятся сами по себе: свечение (или радиолюминесценция) возникает благодаря взаимодействию испускаемых частиц с окружающими их материалами. Это свечение может быть и желтым, и голубым, и желтоватым… Но почему-то именно зеленый цвет у нас плотно ассоциируется с радиацией.\r\n\r\nВиновником этого предрассудка, скорее всего, является радиоактивный металл радий. В начале 20 века наука сделала большой шаг вперед в исследовании природы радиации открытии новых радиоактивных элементов. Любопытство и желание привнести инновации заставляло людей использовать радиоактивные вещества, например, в массовом производстве бытовых товаров, тем более наука того времени еще не рассматривала радиоактивное излучение как нечто, опасное для человека. \r\n\r\nОдним из элементов, представлявших наибольший интерес являлся радий. На его основе изготавливали светящуюся краску, где радиоактивное излучение радия создавало радиолюминесценцию зеленого цвета. Это ведь так удобно: покрасить необходимые места радиевой краской, которая будет светиться в темноте долгие годы без каких-либо проблем! \r\n\r\nПодобную краску использовали для выделения цифр и стрелок в наручных или комнатных часах, на приборах, которыми приходилось пользоваться в темноте, в кабинах транспортных средств и даже в некоторых дизайнерских решениях. Когда же человечество наконец-то осознало опасность радиоактивного излучения, все стали в срочном порядке избавляться от вещей с радиевой краской. А зловещее зеленое свечение навсегда в общественном сознании стало ассоциироваться со словом «радиация».",
+    "publish": "2023-04-27T14:51:08Z",
+    "created": "2023-04-27T14:53:12.556Z",
+    "updated": "2023-04-27T14:59:10.907Z",
+    "status": "PB",
+    "author": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "Жидкое ли стекло?",
+    "slug": "zhidkoe-li-steklo",
+    "body": "Многие люди даже не подозревают о том, что вокруг нас есть множество предметов и вещей, которые имеют удивительные свойства. В этой статье обсудим твердость некоторых материалов и интересные результаты, которые получаются на основе этих свойств.\r\n\r\nВ 1994 году большое землетрясение ударило близ Лос-Анджелеса, убив 57 человек, и поранив более 5 000. Материальный урон достиг невероятных 20 миллиардов долларов. Такие землетрясения заставляют нас задуматься. Насколько твердая земля под нашими ногами? Что вообще значит понятие твердости?\r\n\r\nКаменноугольный пек кажется твердым, но это не так. На самом деле он является очень вязкой жидкостью, т.е. он жидкий. Вязкость - это мера сопротивления растеканию. Оливковое масло примерно в 100 раз вязче воды, а мед в 100 раз вязче масла. Вязкость пека больше вязкости воды в 230 миллиардов раз. В Кливлендском университете над пеком проводится самый продолжительный в мире эксперимент. В 1927 году пек был помещен в воронку. За 90 лет из нее упало всего 9 капель. Никто не присутствовал при падении капли. В 1988 году хранитель эксперимента Джон Мейнстон был близок к тому, чтобы увидеть как падает капля. Он вышел из комнаты, чтобы налить себе чаю и пропустил заветный момент. Вы можете наблюдать за этим экспериментом онлайн, но так как последняя капля упала в 2014 году, то вряд ли Вам удастся в ближайшие годы увидеть заветное падение.\r\n\r\nДругое вещество, которое является вязкой жидкостью - это стекло. Стекло необычно тем, что оно является аморфным телом. Молекулы диоксида кремния не составляют упорядоченную структуру. Стекло охлаждается настолько быстро, что при переходе из жидкого в \"твердое\" состояние, молекулы не имеют времени выстроиться в упорядоченную кристаллическую структуру. Визуально твердым стекло делают атомы или молекулы, которые настолько сильно скреплены друг с другом химически, что они не могут проскальзывать рядом с другими.\r\n\r\nОднако отсутствие упорядоченной кристаллической структуры делает стекло всё же жидким, даже когда оно находится в визуально твердом состоянии. Именно из-за того, что стекло на самом деле жидкое, в оконных рамах в старых домах, где окна простояли уже по несколько десятков лет, хорошо заметно, что стекла тоньше вверху чем внизу. Это связано с тем, что некоторая часть стекла за долгие годы уже стекла сверху вниз. Поэтому в таких домах окна дребезжат в рамах, ведь вверху они уже тоньше, чем подготовленный для них зазор. Иногда этот эффект настолько заметен, что сверху образуется даже щель.\r\n\r\nИдем дальше. Что мы знаем про внутреннюю часть Земли? Под земной корой находится мантия, которая отвечает за движение тектонических плит и землетрясения. Твердая она или жидкая? Мы никогда не сможем увидеть мантию напрямую, но можем наблюдать лаву, которая является раскаленным камнем. Можно представить, что мантия очень на нее похожа. Мантия должна быть жидкой, потому что ей нужно течь, правильно? На самом деле нет, потому что мантия является твердым телом. Волны с двигательным землетрясением могут распространяться сквозь мантию, но эти волны не могут передвигаться сквозь жидкости, что является подтверждением ее твердости. Каким же образом твердый камень течет? Ответ находится в неидеальности кристаллов, у которых может не хватать нескольких атомов. Вязкость мантии походит на вязкость стекла, только на несколько порядков выше. Мантия становится похожа на жидкость, но только в геологические отрезки времени. Пек - это жидкость, которая может течь так медленно, что кажется твердым телом. А мантия земли - это твердое тело, которое ведет себя как жидкость, если подождать достаточно долго.\r\n\r\nТвердость и пластичность не имеет абсолютного значения, а только относительное. И все тела на самом деле одновременно жидкие и твердые. Когда в деле огромная масса и сила, то разница теряет значение. Твердые определения, которые мы для себя создаем, приводят к неправильным представлениям и вязким слухам.",
+    "publish": "2023-04-30T08:54:19Z",
+    "created": "2023-04-30T08:54:48.042Z",
+    "updated": "2023-04-30T08:54:48.042Z",
+    "status": "PB",
+    "author": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Правда ли, что мозг работает всего на 10%?",
+    "slug": "pravda-li-chto-mozg-rabotaet-vsego-na-10",
+    "body": "В наши дни часто можно встретиться с мнением о том, что человеческий мозг, якобы работает всего на 10% от всех своих возможностей. На основе подобного утверждения даже строится сюжет некоторых популярных фильмов. Попробуем разобраться, действительно ли каждый из нас может внезапно стать в десять раз умнее, или это миф, и если да, то откуда он взялся?\r\n\r\nУтверждения о том, что мозг человека якобы работает всего на 10% стали впервые появляться в начале 20-го века в различных далеко не научных, а коммерческих книгах про саморазвитие, экстрасенсов и прочее. Из этих материалов следовало, будто бы 90% (или около того) истинного потенциала мозга скрыто и не используется. Эти же источники также обещали предложить некоторые методы, благодаря которым якобы можно было бы легко, без труда и быстро раскрыть в себе этот потенциал и достичь сверхспособностей.\r\n\r\nНа данный момент уже абсолютно очевидно, что это была элементарная игра на человеческих слабостях и желании легкого успеха. Ни один из предлагавшихся методов по раскрытию дополнительных способностей, очевидно, ни разу не дал результата (иначе этот метод использовался бы сегодня широко и повсеместно). Все эти книги и идеи, изложенные в них, были быстро забыты ввиду полнейшей несостоятельности. Однако спрос на подобную литературу всегда был и есть, и подобные книги, предлагающие все новые и новые рецепты быстрого и легкого успеха, выпускалась и выпускаются до нашего времени.\r\n\r\nАвторы этих книг, журналисты и писаки всё же пытались придать научности своим голословным утверждениям и ссылались на известного в то время психолога Уильяма Джеймса. Хотя тот всего-навсего предположил, что лишь возможно то, что мы просто не совсем полностью используем свой потенциал. При этом он не делал никаких численных оценок. Такое неполное использование мозга основано не на том, что часть его потенциала скрыта и недоступна, а на человеческой лени и отсутствии мотивации. Именно это и подразумевал ученый.\r\n\r\nОсобенную популярность идея о том, что мозг человека якобы работает всего на 10% приобрела после выхода книги Дейла Карнеги «Как завоевать друзей?». В предисловии к этой книге журналист Лоуэлл Томас, не только сильно перефразировал и до неузнаваемости исказил слова Джеймса, но и сам придумал из головы точный процент.\r\n\r\nНо откуда все же взялось это заблуждение? Разберемся:\r\n\r\nВо-первых, как раз в начале 20-го века ученые обнаружили, что мозг человека на 90% состоит из глиальных клеток, на первый взгляд якобы бесполезных. На данный момент, уже стало известно, что эти клетки вовсе не бесполезны, а выполняют роль сложнейших маршрутизаторов и обеспечивают связь между нейронами мозга. Более того, обнаружилось, что чем больше в мозгу этих самых клеток, тем лучше он работает и тем умнее человек.\r\nВо-вторых, тогда же ученые поняли, что в разные моменты времени активны различные участки мозга, т.е. одновременно он весь целиком действительно не работает. Кстати, когда одновременно срабатывает весь мозг, т.е. все его участки, то у человека случается эпилептический припадок, такое как известно случается, но вряд ли тянет на сверхспособности.\r\nОднако услышав об этих научных открытиях журналисты сразу же все перекрутили на свой лад, так чтобы это выглядело как сенсация. Однако и до сих пор не появилось ни одного действительно научного исследования, которое бы утверждало, что мозг работает на некоторый небольшой процент от своих возможностей.\r\n\r\nДело в том, что этот вопрос: «на сколько процентов от своих возможностей работает мозг?» является совсем не научным. Этот вопрос лежит в области элементарной логики, а не биологии. Ответ на него слишком прост и очевиден, чтобы ученые им вообще занимались. И ответ этот таков:\r\n\r\nУ каждого конкретного человека, в момент максимально умственного напряжения, мозг выдает все 100% из тех возможностей, на которые он в данный момент способен.\r\nПри этом если человек сидит без дела, то, очевидно, мозг не работает на полную (хотя, как известно, работа мозга никогда полностью не останавливается, он всегда контролирует работу всех органов, отслеживает множество показателей и факторов и находится в постоянной готовности).\r\n\r\nЭто не означает, что мозг нельзя развивать, наоборот можно и нужно это делать, и возможно его можно развивать даже очень сильно и во много раз, но для этого нужно много трудиться. При этом в каждый конкретный момент Ваш мозг будет способен выдавать все 100% своих возможностей на этот момент.\r\n\r\nТут можно провести аналогию с обычными мышцами. Предположим, что кто-то может поднять штангу массой 100 кг. Очевидно, что он не всегда этим занимается. Иногда этот человек сидит на диване и использует свои мышцы на ноль процентов. В другой ситуации, возможно человеку нужно будет поднять всего 10 кг, тогда он использует 10% своих возможностей. Но может так случится, что человеку придется поднять все 100 кг, тогда он тоже с этим справится и задействует все 100% своих возможностей. Ну и наконец, этот человек может продолжить тренировки, и развить свои мышцы настолько, что сможет поднимать 200 кг. Однако это не будет означать, что на тот момент, когда он еще мог поднять всего 100 кг, и поднял их, он использовал свои мышцы на 50%, тогда он использовал все 100% от своих тогдашних возможностей. Точно так же дело обстоит и с мозгом, просто числовое выражение его способностей сложнее оценить.\r\n\r\nСделаем еще несколько замечаний относительно этого вопроса. Дело в том, что масса мозга составляет в среднем всего 2% от массы тела, однако мозг потребляет целых 20% энергии доступной человеку. А в случае если есть дефицит энергии, то этот процент еще возрастает, в таких случаях мозг оттягивает на себя всю доступную энергию от других органов. Таким образом, если бы он не работал на полную, то природа в ходе эволюции сама избавилась бы от этих якобы «лишних» 90% мозга и таким образом сократила бы потребление столь ценной энергии.\r\n\r\nУпомянем также и о таком понятии как нейропластичность. Дело в том, что если определённый участок мозга человека поврежден, то остальные участки мозга берут на себя его функции, ну или по крайней мере пытаются это сделать. Обратное также верно, если определенному участку мозга внезапно не нашлось работы (например, человек потерял зрение, и тот участок мозга, который отвечал за обработку этих сигналов больше не загружен работой), то этот участок мозга берет на себя функции и помогает остальным частям мозга (и в нашем примере, например, обостряются другие чувства такие как слух, обоняние и так далее). Таким образом, мозг всегда старается загрузить себя по полной и не оставаться без дела, т.е. мозг способен и готов работать на все 100%.\r\n\r\nИ тем не менее в миф о том, что мозг человека якобы работает не полностью, верит около 65% населения Земли. Но почему? Всё очень просто. Миф о том, что в каждом человеке сокрыт невероятный потенциал, который можно просто раскрыть «повернув некий тайный выключатель», очень нравится большинству людей. А различные шарлатаны стараются подпитывать этот миф, чтобы и дальше успешно продавать книги и услуги или по-другому обманывать людей, обещая им быстрое и легкое раскрытие невероятных сверхспособностей. Людям очень хочется верить, что вот действительно, я сейчас прочитаю тайный рецепт и без труда, усилий и тренировок стану великим и богатым.\r\n\r\nА мы еще раз повторимся, тренировать мозг можно и нужно, можно увеличивать его способности, которые в каждый конкретный момент Вы сможете использовать на все 100% от достигнутого уровня. Но для этого нужен долгий, кропотливый и усердный труд, и только так.",
+    "publish": "2023-04-30T08:54:56Z",
+    "created": "2023-04-30T08:56:02.561Z",
+    "updated": "2023-04-30T08:56:02.561Z",
+    "status": "PB",
+    "author": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Markdown post",
+    "slug": "markdown-post",
+    "body": "This is a post formatted with markdown\r\n--------------------------------------\r\n*This is emphasized* and **this is more emphasized**.\r\nHere is a list:\r\n* One\r\n* Two\r\n* Three\r\nAnd a [link to the Django website](https://www.djangoproject.com/)",
+    "publish": "2023-04-30T17:22:46Z",
+    "created": "2023-04-30T17:23:38.568Z",
+    "updated": "2023-04-30T17:23:38.568Z",
+    "status": "PB",
+    "author": 1
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "name": "Michail",
+    "email": "b1trocsgo@gmail.com",
+    "boody": "Мой первый комментарий!",
+    "created": "2023-04-27T08:10:42.386Z",
+    "updated": "2023-04-27T08:10:42.386Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 5,
+    "name": "Michail",
+    "email": "b1trocsgo@gmail.com",
+    "boody": "Very good post",
+    "created": "2023-04-27T13:52:14.679Z",
+    "updated": "2023-04-27T13:52:14.679Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 6,
+    "name": "Michail",
+    "email": "b1trocsgo@gmail.com",
+    "boody": "Мдааа ну люди и дают",
+    "created": "2023-04-27T15:04:00.069Z",
+    "updated": "2023-04-27T15:04:00.069Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "Science",
+    "slug": "science"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "Music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "Brief",
+    "slug": "brief"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "History",
+    "slug": "history"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Brain",
+    "slug": "brain"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "markdown",
+    "slug": "markdown"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 6,
+    "content_type": 7,
+    "object_id": 9
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "localhost:8000"
+  }
+}
+]
